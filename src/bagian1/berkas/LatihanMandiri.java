@@ -11,7 +11,7 @@ public class LatihanMandiri {
         if (catatan.exists()) {
             System.out.println("Berkas catatan.txt ada, ukuran: " + catatan.length() + " byte");
         } else {
-            System.out.println("Berkas data.txt tidak ditemukan.");
+            System.out.println("Berkas catatan.txt tidak ditemukan.");
         }
         System.out.println();
 
