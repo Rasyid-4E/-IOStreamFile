@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Gudang {
-    // ArrayList yang menampung objek bertipe Barang
+    //ArrayList
     private ArrayList<Barang> daftar = new ArrayList<>();
     private String namaBerkas;
 
@@ -16,12 +16,10 @@ public class Gudang {
         this.namaBerkas = namaBerkas;
     }
 
-    // Menambah satu barang ke koleksi
     public void tambahBarang(Barang barang) {
         daftar.add(barang);
     }
 
-    // Menampilkan seluruh koleksi beserta nomor urut
     public void tampilkanSemua() {
         System.out.println("== Daftar Barang ==");
         for (int i = 0; i < daftar.size(); i++) {
@@ -30,7 +28,6 @@ public class Gudang {
         }
     }
 
-    // Menyimpan seluruh barang ke berkas, satu barang per baris
     public void simpanKeBerkas() {
         try (PrintWriter penulis = new PrintWriter(new FileWriter(namaBerkas))) {
             for (Barang b : daftar) {
@@ -42,7 +39,6 @@ public class Gudang {
         }
     }
 
-    // Membaca kembali barang dari berkas ke dalam ArrayList
     public void muatDariBerkas() {
         daftar.clear();
         try (BufferedReader pembaca = new BufferedReader(new FileReader(namaBerkas))) {
@@ -62,7 +58,6 @@ public class Gudang {
         }
     }
 
-    // Menjumlahkan harga dikali stok dari seluruh barang
     public double totalNilai() {
         double total = 0;
         for (Barang b : daftar) {

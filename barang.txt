@@ -1,0 +1,5 @@
+Mouse Wireless;75000.0;20
+Keyboard Mekanik;350000.0;10
+Indomie Goreng;3500.0;100
+Kaos Polos;45000.0;30
+Pulpen Standar;2500.0;200
