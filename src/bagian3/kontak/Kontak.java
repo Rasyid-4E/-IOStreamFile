@@ -1,27 +1,35 @@
 package bagian3.kontak;
 
-    public class Kontak {
-        // Atribut: data yang dimiliki setiap Kontak
-        private String nama;
-        private String nomor;
-        // Constructor: dipanggil saat objek dibuat
-        public Kontak(String nama, String nomor) {
+public class Kontak {
+    // Atribut
+    private String nama;
+    private String nomor;
+    private String email;
+
+    // Constructor
+    public Kontak(String nama, String nomor, String email) {
         this.nama = nama;
         this.nomor = nomor;
-        }
-        // Getter: cara membaca atribut dari luar class
-        public String getNama() {
+        this.email = email;
+    }
+    
+    public String getNama() {
         return nama;
-        }
-        public String getNomor() {
+    }
+
+    public String getNomor() {
         return nomor;
-        }
-        // Mengubah objek menjadi satu baris teks untuk disimpan ke berkas
-        public String keBaris() {
-        return nama + ";" + nomor;
-        }
-        // Mengembalikan keterangan Kontak dalam bentuk teks
-        public String info() {
-        return nama + " - " + nomor;
-        }
-       }
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String keBaris() {
+        return nama + ";" + nomor + ";" + email;
+    }
+
+    public String info() {
+        return nama + " - " + nomor + " - " + email;
+    }
+}
