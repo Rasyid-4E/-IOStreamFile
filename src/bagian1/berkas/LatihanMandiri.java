@@ -7,9 +7,9 @@ public class LatihanMandiri {
     public static void main(String[] args) {
         //cek keberadaan & ukuran data.txt
         System.out.println("=== Soal 1 ===");
-        File data = new File("data.txt");
-        if (data.exists()) {
-            System.out.println("Berkas data.txt ada, ukuran: " + data.length() + " byte");
+        File catatan = new File("catatan.txt");
+        if (catatan.exists()) {
+            System.out.println("Berkas catatan.txt ada, ukuran: " + catatan.length() + " byte");
         } else {
             System.out.println("Berkas data.txt tidak ditemukan.");
         }
