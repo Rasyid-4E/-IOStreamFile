@@ -5,9 +5,7 @@ import java.io.IOException;
 
      public class Latihan1 {
         public static void main(String[] args) throws IOException {
-        // Objek File hanyalah penunjuk, belum tentu ada di disk
         File berkas = new File("catatan.txt");
-        // Membuat berkas baru bila belum ada
         if (berkas.createNewFile()) {
         System.out.println("Berkas dibuat : " + berkas.getName());
             } else {

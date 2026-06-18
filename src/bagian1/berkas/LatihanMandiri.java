@@ -5,13 +5,13 @@ import java.io.IOException;
 
 public class LatihanMandiri {
     public static void main(String[] args) {
-        //cek keberadaan & ukuran laporan.txt
+        //cek keberadaan & ukuran data.txt
         System.out.println("=== Soal 1 ===");
-        File laporan = new File("laporan.txt");
-        if (laporan.exists()) {
-            System.out.println("Berkas laporan.txt ada, ukuran: " + laporan.length() + " byte");
+        File data = new File("data.txt");
+        if (data.exists()) {
+            System.out.println("Berkas data.txt ada, ukuran: " + data.length() + " byte");
         } else {
-            System.out.println("Berkas laporan.txt tidak ditemukan.");
+            System.out.println("Berkas data.txt tidak ditemukan.");
         }
         System.out.println();
 
